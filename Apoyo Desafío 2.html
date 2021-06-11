@@ -47,9 +47,9 @@ traumatologia.push(
     {hora: '12:00', especialista: 'MATIAS ARAVENA',         paciente: 'SUSANA POBLETE', rut: '14345656-6', prevision: 'FONASA'}, 
     );
 //Eliminar el primer y ultimo elemento del arreglo Radiologia
-
-radiologia.shift();
 radiologia.pop();
+radiologia.shift();
+
 
 //Imprimir en pantalla lista de consultas medicas dental separados por guion
 document.write(`<h2>Lista Consulta Dental</h2>`);
@@ -65,8 +65,8 @@ const listaDeConsultasDentalSeparadasPorGuion = dental.map(consulta => {
   });
 
 //Filtrar a todos los pacientes con ISAPRE de la lista
-document.write(`<h2>Lista Todos los pacientes con Isapre</h2>`);
- const TodosLosPacientesConIsapre = TodosLosPacientes.filter(consulta => {
+document.write(`<h2>Lista Todos los pacientes con Isapre de Dental</h2>`);
+ const TodosLosPacientesConIsapreDental = dental.filter(consulta => {
      if(consulta.prevision=="ISAPRE"){
     document.write(`<p>${[consulta.paciente]} </p>`);}
   });
