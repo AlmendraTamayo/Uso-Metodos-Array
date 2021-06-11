@@ -64,7 +64,7 @@ const listaDeConsultasDentalSeparadasPorGuion = dental.map(consulta => {
     document.write(`<p>${[consulta.paciente]} </p>`);
   });
 
-//Filtrar a todos los pacientes con ISAPRE de la lista
+//Filtrar a todos los pacientes con ISAPRE de la lista dental
 document.write(`<h2>Lista Todos los pacientes con Isapre de Dental</h2>`);
  const TodosLosPacientesConIsapreDental = dental.filter(consulta => {
      if(consulta.prevision=="ISAPRE"){
